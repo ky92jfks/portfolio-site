@@ -30,8 +30,8 @@ a {
 }
 
 a:hover {
-	opacity: 0.5;
-	transition: all  0.1s ease;
+	opacity: 0.8;
+	transition: all 0.1s ease;
 }
 
 /* page_top */
@@ -302,6 +302,92 @@ a:hover {
 	}
 }
 
+/** detail_page **/
+/* detail */
+.detail {
+	margin-top: 56px;
+	margin-bottom: 56px;
+	// margin-right: auto;
+	// margin-left: auto;
+	
+	.detail_item {
+		text-align: center;
+		margin-bottom: 32px;
+
+		img {
+			border: 1px solid #f3f3f3;
+			width: 836px;
+			height: 422px;
+			object-fit: cover;
+			max-width: 100%;
+			box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+		}
+	}
+	
+	.detail_txt {
+		max-width: 836px;
+		margin-bottom: 30px;
+
+		h1 {
+			font-size: 20px;
+			border: none;
+			margin-bottom: 16px;
+		}
+
+		p {
+			margin-bottom: 8px;
+		}
+		
+		.link {
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+			a {
+				padding: 1px 2px;
+				color: #aaaaaa;
+				// text-decoration: underline;
+				border-bottom: solid 4px #ffeb95;
+			}
+			a:hover {
+				opacity: 0.8;
+				transition: all 0.1s ease;
+				// background-color: #b5f7f7;
+				background-color: #ffeb95;
+				color: #6e6e6e;
+			}
+		}
+	}
+
+/* return_btn */
+	.return_btn {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.return_btn a {
+		display: inline-block;
+		text-align: center;
+		padding: 12px 32px;
+		background-color: #ffffff;
+		color: #707070;
+		/* font-weight: bold; */
+		font-size: 14px;
+		border: solid 1px #707070;
+		text-decoration: none;
+	}
+
+	/* ボタンの色の遷移 */
+	.return_btn a:hover {
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		transition: all  0.2s ease;
+		// color: #707070;
+		background-color: #e7e7e7;
+		border-color: #e7e7e7;
+	}
+}
+
 /* 各項目上下 */
 .portfolio  {
 	margin-top: 82px;
@@ -399,6 +485,7 @@ a:hover {
 		}
 	}
 }
+
 }
 
 /* ############# 1005px以下(SP・タブレット) ############# */
@@ -412,6 +499,7 @@ a:hover {
 .portfolio, .about, .skill, .contact {
 	margin-bottom: 160px;
 }
+
 /* 全体の横幅を固定 */
 .header, .portfolio, .about, .skill, .contact, .footer {
 	margin-left: 30px;
@@ -422,11 +510,52 @@ a:hover {
 
 /* ############# 1006px以上(PC) ############# */
 @media (min-width: 1006px) {
-/* 全体の横幅を固定 */
-.header, .portfolio, .about, .skill, .contact, .footer {
-	max-width: 1006px;
-	margin-left: auto;
-	margin-right: auto;
+	/* 全体の横幅を固定 */
+	.header, .portfolio, .about, .skill, .contact, .footer {
+		max-width: 1006px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
 }
 
+/** detail_page **/
+/* ############# 767px以下(detail_page SP) ############# */
+@media (max-width: 767px) {
+	.detail {
+		margin-top: 32px;
+		margin-bottom: 32px;
+
+		.detail_item {
+			margin-bottom: 16px;
+			img {
+				max-height: 210px;
+			}
+		}
+		.detail_txt {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+/* ############# 836px以上(detail_page SP・タブレット ) ############# */
+@media (max-width: 835px) {
+	.detail {
+		margin-left: 30px;
+		margin-right: 30px;
+		a:hover {
+			opacity: 0.8;
+			transition: all  0.1s ease;
+		}
+	}
+}
+
+/* ############# 836px以上(detail_page PC) ############# */
+@media (min-width: 836px) {
+	.detail {
+		max-width: 836px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
