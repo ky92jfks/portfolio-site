@@ -237,11 +237,11 @@ a:hover {
 }
 
 .skill .skill_list ul .bar-js::after {
-  max-width: 70%;
+  max-width: 30%;
 }
 
 .skill .skill_list ul .bar-jquery::after {
-  max-width: 75%;
+  max-width: 50%;
 }
 
 .skill .skill_list ul .bar-vue::after {
