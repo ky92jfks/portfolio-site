@@ -174,112 +174,8 @@ a:hover {
   margin-bottom: 42px;
 }
 
-.skill .skill_list {
-  position: relative;
-}
-
-.skill .skill_list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  height: 300px;
-}
-
 .skill .skill_list ul li {
-  width: 30%;
   margin-bottom: 36px;
-  margin-left: 0;
-  margin-right: 5%;
-  position: relative;
-}
-
-.skill .skill_list ul li p {
-  display: block;
-  margin-left: 4px;
-}
-
-.skill .skill_list ul li::before {
-  content: '';
-  width: 100%;
-  position: absolute;
-  display: block;
-  height: 24px;
-  left: 0;
-  top: 0;
-  z-index: -2;
-  background-color: #ffffff;
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
-}
-
-.skill .skill_list ul li::after {
-  content: '';
-  background-color: #D6F6FF;
-  position: absolute;
-  display: block;
-  height: 24px;
-  width: 100%;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.skill .skill_list ul .bar-html5::after {
-  max-width: 100%;
-}
-
-.skill .skill_list ul .bar-css3::after {
-  max-width: 100%;
-}
-
-.skill .skill_list ul .bar-js::after {
-  max-width: 30%;
-}
-
-.skill .skill_list ul .bar-jquery::after {
-  max-width: 50%;
-}
-
-.skill .skill_list ul .bar-vue::after {
-  max-width: 20%;
-}
-
-.skill .skill_list ul .bar-php::after {
-  max-width: 20%;
-}
-
-.skill .skill_list ul .bar-wp::after {
-  max-width: 30%;
-}
-
-.skill .skill_list ul .bar-gh::after {
-  max-width: 20%;
-}
-
-.skill .skill_list ul .bar-xd::after {
-  max-width: 100%;
-}
-
-.skill .skill_list ul .bar-ps::after {
-  max-width: 100%;
-}
-
-.skill .skill_list ul .bar-ai::after {
-  max-width: 70%;
-}
-
-.skill .skill_list .other {
-  position: absolute;
-  top: 120px;
-  left: 70%;
-}
-
-.skill .skill_list .other .other_index {
-  font-size: 12px;
 }
 
 /* Contact */
@@ -473,21 +369,6 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-  /* Skill */
-  .skill .skill_list {
-    position: static;
-  }
-  .skill .skill_list ul {
-    display: block;
-    height: auto;
-    margin-bottom: 60px;
-  }
-  .skill .skill_list ul li {
-    width: 100%;
-  }
-  .skill .skill_list .other {
-    position: static;
-  }
 }
 
 /* ############# 1005px以下(SP・タブレット) ############# */
@@ -556,4 +437,3 @@ a:hover {
     margin-right: auto;
   }
 }
-/*# sourceMappingURL=style.css.map */
