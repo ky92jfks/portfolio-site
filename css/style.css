@@ -1,0 +1,460 @@
+@charset "UTF-8";
+/* 共通設定 */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Lato', 'Noto Sans JP', 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+  background-color: #fff;
+  color: #6e6e6e;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.05rem;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.wrapper_toppage {
+  max-width: 1006px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+.flex_space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+.section-title {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.category-tag--web {
+  background-color: #82dff4;
+  color: #ffffff;
+}
+.category-tag--banner {
+  background-color: #f482a8;
+  color: #ffffff;
+}
+
+/* 背景色変更・余白設定 */
+#bg-wrapper {
+  position: fixed;
+  top: 60px;
+  left: 60px;
+  right: 60px;
+  bottom: 60px;
+  transition: background-color 0.8s ease;
+  z-index: -1; /* 背景なので一番下に */
+  pointer-events: none; /* 背景なのでクリック不可にしておく */
+}
+
+/* page_top */
+#page_top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 70px;
+  bottom: 70px;
+  border: 1px solid #6e6e6e;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+#page_top a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+#page_top a::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f106';
+  font-size: 28px;
+  color: #6e6e6e;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+/* header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 9999;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+#header .section-link {
+  font-size: 12px;
+  margin-right: 64px;
+}
+
+/* Portfolio */
+#portfolio {
+  padding-top: 150px;
+  padding-bottom: 250px;
+}
+#portfolio .section-title {
+  border-bottom: solid 4px #82dff4;
+}
+#portfolio .portfolio_contents {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 80px;
+}
+#portfolio .portfolio_contents .item_single {
+  max-width: 30%;
+}
+#portfolio .portfolio_contents .item_single .item_single_img {
+  -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+#portfolio .portfolio_contents .item_single .item_single_img img {
+  width: 100%;
+}
+#portfolio .item_single .title {
+  width: 210px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  padding: 4px 0px;
+  text-align: left;
+}
+
+
+/* About */
+#about {
+  padding-top: 260px;
+  padding-bottom: 450px;
+}
+#about .section-title {
+  border-bottom: solid 4px #f482a8;
+}
+#about .about_contents .text {
+  width: 68%;
+  padding-right: 20px;
+}
+#about .about_contents .text p {
+  line-height: 1.8rem;
+  margin-bottom: 12px;
+}
+#about .about_contents .about_img img {
+  -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 288px;
+  border-radius: 20px;
+}
+
+
+/* Skill */
+#skill {
+  padding-top: 260px;
+  padding-bottom: 450px;
+}
+#skill .section-title {
+  border-bottom: solid 4px #f4ce43;
+}
+#skill .skill_list li {
+  margin-bottom: 36px;
+}
+
+
+/* footer */
+#footer {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+#footer .copyright {
+  font-size: 12px;
+}
+
+
+/** detail_page **/
+.wrapper_detailpage {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.detailpage {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.detailpage .detail_img img {
+  /* border: 1px solid #f3f3f3; */
+  /* object-fit: cover; */
+  /* object-position: center top; */
+  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 80px;
+}
+.detailpage .banner_img {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.detailpage .detail_txt .detailpage-title {
+  font-size: 24px;
+  margin-bottom: 14px;
+  font-weight: normal;
+}
+.detailpage .detail_txt .category-tag_detailpage {
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.detailpage .detail_txt .link {
+  margin-bottom: 40px;
+}
+.detailpage .detail_txt .link a {
+  display: inline-block;
+  padding: 1px 2px;
+  color: #aaaaaa;
+  border-bottom: solid 4px #ffeb95;
+  font-size: 18px;
+}
+.detailpage .detail_txt .link a:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  background-color: #ffeb95;
+  color: #6e6e6e;
+}
+.detailpage .detail_txt .text_explanation {
+  line-height: 2rem;
+  margin-bottom: 40px;
+}
+.detailpage .detail_txt .text_supplement {
+  font-size: 14px;
+  line-height: 2rem;
+}
+
+.detailpage .return_btn {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.detailpage .return_btn a {
+  display: inline-block;
+  text-align: center;
+  padding: 12px 32px;
+  background-color: #ffffff;
+  color: #707070;
+  font-size: 14px;
+  border: solid 1px #707070;
+  text-decoration: none;
+}
+
+/* タブレット・SP版 */
+@media (max-width: 1100px) {
+  /* 共通 */
+  .wrapper_toppage {
+    padding: 0 20px;
+  }
+
+  /* page_top */
+  #page_top {
+    right: 40px;
+    bottom: 40px;
+  }
+
+  /* Portfolio */
+  #portfolio .portfolio_contents .item_single {
+    max-width: 47%;
+    width: 47%;
+  }
+
+  /** detail_page **/
+  .wrapper_detailpage {
+    padding: 0 20px;
+  }
+
+}
+
+/* SP版 */
+@media (max-width: 880px) {
+  /* 背景余白設定 */
+  #bg-wrapper {
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+  }
+
+  /* 共通 */
+  .category-tag {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+  .category-tag--banner {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: inline-block;
+  }
+
+  /* page_top */
+  #page_top {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  /* Portfolio */
+  #portfolio {
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+  #portfolio .portfolio_contents .item_single {
+    max-width: 80%;
+    width: 80%;
+    margin: 0 auto 24px auto;
+  }
+  #portfolio .portfolio_contents .item_single .title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  /* About */
+  #about {
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
+  #about .flex_space-between {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #about .about_contents .text {
+    width: 100%;
+    padding-right: 0;
+  }
+  #about .about_contents .about_img {
+    margin-bottom: 30px;
+  }
+  #about .about_contents .about_img img {
+    width: 144px;
+    height: 144px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+  }
+
+  /* Skill */
+  #skill {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  /** detail_page **/
+  .detailpage .detail_img img {
+    margin-bottom: 40px;
+  }
+  .detailpage .banner_img {
+    max-width: 90%;
+  }
+  .detailpage .detail_txt .detailpage-title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .detailpage .detail_txt .category-tag_detailpage {
+    font-size: 13px;
+    padding: 6px 9px;
+  }
+
+  .detailpage .detail_txt .link a {
+    font-size: 16px;
+    word-break: break-word;
+  }
+
+  .detailpage .detail_txt .text_explanation,
+  .detailpage .detail_txt .text_supplement {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .detailpage .return_btn {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .detailpage .return_btn a {
+    /* width: 100%; */
+    /* padding: 12px 0; */
+    font-size: 15px;
+  }
+
+  footer .copyright {
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+/* より小さい端末用 */
+@media (max-width: 600px) {
+  /** detail_page **/
+  .detailpage .detail_txt .detailpage-title {
+    font-size: 18px;
+  }
+
+  .detailpage .detail_txt .text_explanation,
+  .detailpage .detail_txt .text_supplement {
+    font-size: 14px;
+  }
+
+  .detailpage .return_btn a {
+    font-size: 14px;
+  }
+}
