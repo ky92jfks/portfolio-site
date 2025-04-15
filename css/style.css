@@ -315,6 +315,9 @@ a:hover {
     max-width: 47%;
     width: 47%;
   }
+  #portfolio .portfolio_contents .item_single .title {
+    width: 330px;
+  }
 
   /** detail_page **/
   .wrapper_detailpage {
@@ -336,7 +339,7 @@ a:hover {
   /* 共通 */
   .category-tag {
     font-size: 0.8rem;
-    padding: 4px 8px;
+    padding: 8px;
   }
   .category-tag--banner {
     white-space: nowrap;
@@ -363,6 +366,7 @@ a:hover {
     margin: 0 auto 24px auto;
   }
   #portfolio .portfolio_contents .item_single .title {
+    width: 200px;
     font-size: 1.1rem;
     line-height: 1.4;
   }
@@ -395,6 +399,11 @@ a:hover {
   #skill {
     padding-top: 80px;
     padding-bottom: 80px;
+  }
+
+  /* footer */
+  #footer .copyright {
+    font-size: 11px;
   }
 
   /** detail_page **/
@@ -434,11 +443,6 @@ a:hover {
     /* width: 100%; */
     /* padding: 12px 0; */
     font-size: 15px;
-  }
-
-  footer .copyright {
-    font-size: 11px;
-    text-align: center;
   }
 }
 
