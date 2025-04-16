@@ -114,7 +114,7 @@ a:hover {
 }
 
 .bg-layer.active {
-  opacity: 0.8;
+  opacity: 0.7;
   z-index: 1;
 }
 
@@ -131,10 +131,10 @@ a:hover {
 }
 
 /* 色味確認用 */
-.test {
-  background-color: #d0ffef;
-  background-color: #cde9ff;
-}
+/* .test {
+  background-color: #ffd8b2;
+  background-color: #fffbc0;
+} */
 
 
 /* page_top */
