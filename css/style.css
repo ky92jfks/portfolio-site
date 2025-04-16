@@ -168,6 +168,7 @@ a:hover {
 }
 #portfolio .portfolio_contents .item_single {
   max-width: 30%;
+  position: relative;
 }
 #portfolio .portfolio_contents .item_single .item_single_img {
   -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
@@ -178,7 +179,7 @@ a:hover {
   width: 100%;
 }
 #portfolio .item_single .title {
-  width: 210px;
+  width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -187,6 +188,8 @@ a:hover {
   text-align: left;
 }
 #portfolio .item_single .icon {
+  position: absolute;
+  right: 0;
   display: inline-block;
   font-size: 26px;
   padding: 2px 0;
