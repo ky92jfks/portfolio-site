@@ -94,10 +94,48 @@ a:hover {
   left: 60px;
   right: 60px;
   bottom: 60px;
-  transition: background-color 0.8s ease;
-  z-index: -1; /* 背景なので一番下に */
-  pointer-events: none; /* 背景なのでクリック不可にしておく */
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
 }
+
+.bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 300% 300%;
+  background-position: 0% 50%;
+  animation: gradientMove 7s ease infinite;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.bg-layer.active {
+  opacity: 0.8;
+  z-index: 1;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 色味確認用 */
+.test {
+  background-color: #d0ffef;
+  background-color: #cde9ff;
+}
+
 
 /* page_top */
 #page_top {
