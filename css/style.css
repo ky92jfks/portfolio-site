@@ -306,6 +306,7 @@ a:hover {
   font-size: 30px;
   line-height: 2.2rem;
   color: #bdbdbd;
+  mix-blend-mode: multiply;
   margin-top: 30px;
   margin-bottom: 80px;
 }
