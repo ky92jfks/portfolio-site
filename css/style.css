@@ -209,6 +209,19 @@ a:hover {
   margin-bottom: 36px;
 }
 
+/* Contact */
+#contact {
+  padding-top: 260px;
+  padding-bottom: 450px;
+}
+#contact .section-title {
+  border-bottom: solid 4px #74e385;
+}
+#contact .comment {
+  line-height: 1.8rem;
+  margin-bottom: 30px;
+}
+
 
 /* footer */
 #footer {
@@ -398,6 +411,12 @@ a:hover {
   /* Skill */
   #skill {
     padding-top: 80px;
+    padding-bottom: 0px;
+  }
+
+  /* Contact */
+  #contact {
+    padding-top: 80px;
     padding-bottom: 80px;
   }
 
@@ -448,6 +467,12 @@ a:hover {
 
 /* より小さい端末用 */
 @media (max-width: 600px) {
+  /* header */
+  #header .section-link {
+    /* font-size: 10px; */
+    margin-right: 40px;
+  }
+
   /** detail_page **/
   .detailpage .detail_txt .detailpage-title {
     font-size: 18px;
