@@ -206,6 +206,8 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   row-gap: 80px;
+  column-gap: 7%;
+  justify-content: flex-start; /* 左詰め */
 }
 #portfolio .portfolio_contents .item_single {
   max-width: 30%;
@@ -473,6 +475,10 @@ a:hover {
   }
 
   /* Portfolio */
+  #portfolio .portfolio_contents {
+    column-gap: 0;
+    justify-content: space-between;
+  }
   #portfolio .portfolio_contents .item_single {
     max-width: 47%;
     width: 47%;
