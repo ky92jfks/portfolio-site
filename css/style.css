@@ -56,6 +56,32 @@ a:hover {
   margin-bottom: 50px;
 }
 
+.sns-box {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 60px;
+}
+.btn-sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-sns svg {
+  fill: #fff;
+}
+.btn-x {
+  background-color: #111319;
+}
+
 .category-tag {
   display: inline-block;
   padding: 7px 10px;
