@@ -197,7 +197,8 @@ a:hover {
 /* Portfolio */
 #portfolio {
   padding-top: 150px;
-  padding-bottom: 250px;
+  /* padding-bottom: 250px; */
+  padding-bottom: 100px;
 }
 #portfolio .section-title {
   border-bottom: solid 4px #82dff4;
@@ -241,7 +242,8 @@ a:hover {
 /* News */
 #news {
   padding-top: 210px;
-  padding-bottom: 400px;
+  /* padding-bottom: 400px; */
+  padding-bottom: 100px;
 }
 #news .section-title {
   border-bottom: solid 4px #bd82f4;
@@ -276,7 +278,8 @@ a:hover {
 /* About */
 #about {
   padding-top: 260px;
-  padding-bottom: 450px;
+  /* padding-bottom: 450px; */
+  padding-bottom: 100px;
 }
 #about .section-title {
   border-bottom: solid 4px #f482a8;
@@ -302,7 +305,8 @@ a:hover {
 /* Skill */
 #skill {
   padding-top: 260px;
-  padding-bottom: 450px;
+  /* padding-bottom: 450px; */
+  padding-bottom: 100px;
 }
 #skill .section-title {
   border-bottom: solid 4px #f4ce43;
@@ -322,7 +326,8 @@ a:hover {
 /* Contact */
 #contact {
   padding-top: 260px;
-  padding-bottom: 450px;
+  /* padding-bottom: 450px; */
+  padding-bottom: 100px;
 }
 #contact .section-title {
   border-bottom: solid 4px #74e385;
