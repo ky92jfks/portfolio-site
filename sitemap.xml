@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- トップページ -->
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/</loc>
+  </url>
+
+  <!-- 下層ページ（detailフォルダ） -->
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/w6-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/w5-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/w4-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/w3-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/w2-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/w1-detail.html</loc>
+  </url>
+
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b1-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b2-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b3-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b4-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b5-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b6-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b7-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b8-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b9-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b10-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b11-detail.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/detail/b12-detail.html</loc>
+  </url>
+
+  <!-- ニュースページ（newsフォルダ） -->
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/news/news-250420-01.html</loc>
+  </url>
+  <url>
+    <loc>https://ky92jfks.github.io/portfolio-site/news/news-250414-01.html</loc>
+  </url>
+</urlset>
