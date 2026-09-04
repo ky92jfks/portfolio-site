@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kanna Yaguchi Portfolio Site</title>
+    <meta name="description" content="矢口嘉菜(Kanna Yaguchi / やぐち かんな)のポートフォリオサイトです。Webデザインやグラフィックデザインの制作実績や作品、スキル、自己紹介をご覧いただけます。">
+
+    <meta property="og:title" content="Kanna Yaguchi | デザインポートフォリオサイト">
+    <meta property="og:description" content="Webデザインやグラフィックデザインの制作実績や作品、スキル、自己紹介をご覧いただけます。">
+    <meta property="og:url" content="https://ky92jfks.github.io/portfolio-site/">
+    <meta property="og:image" content="https://ky92jfks.github.io/portfolio-site/img/ogp/ogp-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kanna Yaguchi Portfolio Site">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kanna Yaguchi | デザインポートフォリオサイト">
+    <meta name="twitter:description" content="Webデザインやグラフィックデザインの制作実績や作品、スキル、自己紹介をご覧いただけます。">
+    <meta name="twitter:image" content="https://ky92jfks.github.io/portfolio-site/img/ogp/ogp-image.jpg">
+
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <meta name="google-site-verification" content="04z8dqDpgLQfBFS4PeMGWvUVP7LPjYcJOEfeSStp8Ic" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=M+PLUS+1:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Plaster&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!-- 読み込み時の白画面オーバーレイ -->
+    <div class="loading-overlay_cotainer">
+        <div class="loading-overlay"></div>
+    </div>
+    
+    <!-- 背景図形 -->
+    <div class="global-shape-container" id="globalShapeContainer">
+        <div class="shape shape-bg-triangle float-shape"></div>
+    </div>
+
+    <!-- 背景すりガラス -->
+    <div class="glass-overlay"></div>
+
+    <!-- 背景グラデーション -->
+    <div id="bg-wrapper">
+        <div class="bg-layer current"></div>
+        <div class="bg-layer next"></div>
+    </div>
+
+    <!-- ページトップボタン -->
+    <div id="page_top_button"><a href="#"></a></div>
+
+    <!-- ナビ(PC: 画面右下固定 各セクション移動リンク SP: メニュー開閉 -->
+     <nav>
+        <!-- SP版メニューボタン -->
+         <div class="sp_menu-button_position">
+            <div class="sp_menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+         </div>
+    
+        <!-- PC & SP ナビメニュー一覧 -->
+        <div class="navigation-cover">
+            <ul id="side_navigation">
+                <li class="section-link"><a href="#works">Works</a></li>
+                <li class="section-link"><a href="#about">About</a></li>
+                <li class="section-link"><a href="#skills">Skills</a></li>
+                <li class="section-link"><a href="#news">News</a></li>
+                <li class="section-link"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+     </nav>
+    
+    <section id="main-visual">
+        <!-- 背景図形 -->
+        <div class="shape-container" id="shapeContainer">
+            <div class="shape shape-bg-triangle float-shape"></div>
+        </div>
+        <!-- タイトル -->
+        <h1 class="site-title">
+            <span class="top">Kanna Yaguchi </span>
+            <span class="bottom">Portfolio Site</span>
+        </h1>
+        <!-- モード切り替えボタン -->
+        <button type="button" class="theme-toggle-btn" id="themeToggle" aria-label="テーマ切り替え">
+            <img src="img/button/dark_mode_button.svg" alt="ダークモードへ" class="btn-icon icon-dark">
+            <img src="img/button/light_mode_button.svg" alt="ライトモードへ" class="btn-icon icon-light">
+        </button>
+    </section>
+
+    <section id="works">
+        <div class="wrapper_toppage">
+
+            <h2 class="section-title">Works</h2>
+
+            <div class="works_contents">
+                <div class="works_contents_items">
+                    <h3 class="works_category-name">Web</h3>
+                    <ul class="works_items-wrapper flex">
+                        <li class="works-item">
+                            <a href="detail/w6-detail.html">
+                                <img src="img/works_thumbnail/w_6.png" alt="デンタルクリニック ホームページ">
+                                <p class="title">デンタルクリニック ホームページ</p>
+                                <p class="detail">デザイン / コーディング / 設計</p>
+                            </a>
+                        </li>
+                        <li class="works-item">
+                            <a href="detail/w5-detail.html">
+                                <img src="img/works_thumbnail/w_5.png" alt="アパレルブランド ランディングページ">
+                                <p class="title">アパレルブランド ランディングページ</p>
+                                <p class="detail">デザイン / コーディング / 設計</p>
+                            </a>
+                        </li>
+                        <li class="works-item">
+                            <a href="detail/w4-detail.html">
+                                <img src="img/works_thumbnail/w_4.png" alt="技術ブログ">
+                                <p class="title">技術ブログ</p>
+                                <p class="detail">デザイン / コーディング / 設計</p>
+                            </a>
+                        </li>
+                        <li class="works-item">
+                            <a href="detail/w3-detail.html">
+                                <img src="img/works_thumbnail/w_3.png" alt="レストランのホームページ">
+                                <p class="title">レストランのホームページ</p>
+                                <p class="detail">デザイン / コーディング / 設計</p>
+                            </a>
+                        </li>
+                        <li class="works-item">
+                            <a href="detail/w1-detail.html">
+                                <img src="img/works_thumbnail/w_1.png" alt="化粧品 ランディングページ">
+                                <p class="title">化粧品 ランディングページ</p>
+                                <p class="detail">デザイン / コーディング / 設計</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="works_contents_items">
+                    <h3 class="works_category-name">Banner</h3>
+                    <ul class="works_items-wrapper flex">
+                        <li class="works-item">
+                            <a href="detail/b1-detail.html">
+                                <img src="img/works_thumbnail/b_1.png" alt="女性向けアパレルブランド バナー広告">
+                                <p class="title">女性向けアパレルブランド バナー広告</p>
+                                <p class="detail">デザイン / 設計</p>
+                            </a>
+                        </li>
+                        <li class="works-item">
+                            <a href="detail/b2-detail.html">
+                                <img src="img/works_thumbnail/b_2.png" alt="モデルルーム バナー広告">
+                                <p class="title">モデルルーム バナー広告</p>
+                                <p class="detail">デザイン / 設計</p>
+                            </a>
+                        </li>
+                        <li class="works-item">
+                            <a href="detail/b4-detail.html">
+                                <img src="img/works_thumbnail/b_4.png" alt="ビール飲料販売 バナー広告">
+                                <p class="title">ビール飲料販売 バナー広告</p>
+                                <p class="detail">デザイン / 設計</p>
+                            </a>
+                        </li>
+                        <li class="works-item">
+                            <a href="detail/b6-detail.html">
+                                <img src="img/works_thumbnail/b_6.png" alt="自家用車販売 バナー広告">
+                                <p class="title">自家用車販売 バナー広告</p>
+                                <p class="detail">デザイン / 設計</p>
+                            </a>
+                        </li>
+                        <li class="works-item">
+                            <a href="detail/b9-detail.html">
+                                <img src="img/works_thumbnail/b_9.png" alt="学習塾・予備校 バナー広告">
+                                <p class="title">学習塾・予備校 バナー広告</p>
+                                <p class="detail">デザイン / 設計</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="works_contents_items">
+                    <h3 class="works_category-name">App</h3>
+                    <ul class="works_items-wrapper flex">
+                        <li class="works-item">
+                            <a href="detail/a1-detail.html">
+                                <img src="img/works_thumbnail/a_1.png" alt="洋服を管理するクローゼットアプリ">
+                                <p class="title">洋服を管理するクローゼットアプリ</p>
+                                <p class="detail">デザイン / 設計</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="works_contents_items">
+                    <h3 class="works_category-name">Digital Installation</h3>
+                    <ul class="works_items-wrapper flex">
+                        <li class="works-item">
+                            <a href="detail/di1-detail.html">
+                                <img src="img/works_thumbnail/di_1.png" alt="卒業制作：インスタレーションを使った 子供の新たな遊び">
+                                <p class="title">卒業制作：インスタレーションを使った 子供の新たな遊び</p>
+                                <p class="detail">企画 /デザイン / プログラミング</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="background_color_area">
+        <section id="about" data-gradient-start="#ED91F0" data-gradient-end="#FE6A8D">
+            <div class="wrapper_toppage">
+                <h2 class="section-title">About</h2>
+                <div class="about_contents flex_space-between">
+                    <div class="textarea">
+                        <p class="title">
+                            見て、使って、ちょっと楽しい。<br>
+                            そんなデザインを目指しています。
+                        </p>
+                        <div class="detail">
+                            <p class="name">Kanna Yaguchi  -  やぐち かんな </p>
+                            <div class="explanation">
+                                <p>宮城県仙台市出身</p>
+                                <p>幼い頃から絵を描いたり、ものづくりが好きで、大学ではデザインを専攻。グラフィックデザインとユーザーエクスペリエンスを学び、卒業制作ではProcessingを使用したデジタルインスタレーションを制作しました。</p>
+                                <p>大学卒業後は広告制作会社にてWebデザイナーとして、Webサイトのグラフィック制作を担当。その後、HTML・CSS、JavaScript、PHPなどのマークアップ言語やプログラミング言語などのWeb制作技術を習得しました。</p>
+                                <p>クライアントの意図や届けたい雰囲気をビジュアルとして表現することが好きです。<br>
+                                    目的をきちんと満たしながら、見たり使ったりする人に「ちょっと楽しい」「なんだか嬉しい」と感じてもらえるような、遊び心のあるデザインを目指しています。</p>
+                                <p>写真は大学卒業制作の、プログラミング言語Processingを使用して制作したデジタルインスタレーションです。<br>
+                                    <span class="about_link"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=UQ51IlkRHzs">【卒業制作 Movie (YouTubeに移動します)】</a></span>
+                                </p>
+                            </div>
+                            <div class="sns-box">
+                                <a class="btn-sns btn-x" target="_blank" rel="noopener noreferrer" href="https://x.com/kannadesignlab">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_area">
+                        <img class="mainimg" src="img/about/about_img.png" alt="プロフィール画像">
+                        <img class="textimg" src="img/about/circle_text.svg" alt="テキスト装飾">
+                        <img class="flowerimg" src="img/about/about_img_flower.svg" alt="花装飾">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="skills" data-gradient-start="#F46E62" data-gradient-end="#FECB7A">
+            <div class="wrapper_toppage">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills_contents">
+                    <p class="genre">Web Design / Graphic Design / UIUX / Coding / Programming</p>
+                    <ul class="tools flex">
+                        <li class="tool-item">
+                            <div class="title flex">
+                                <p class="name">Photoshop</p>
+                                <p class="star">★★★★★</p>
+                            </div>
+                            <p class="detail">使用歴10年以上。画像加工やレタッチなども対応可能。一番使用歴が長い。</p>
+                        </li>
+                        
+                        <li class="tool-item">
+                            <div class="title flex">
+                                <p class="name">Illustrator</p>
+                                <p class="star">★★★★☆</p>
+                            </div>
+                            <p class="detail">使用歴10年以上。ベクターデータなどの制作可能。</p>
+                        </li>
+
+                        <li class="tool-item">
+                            <div class="title flex">
+                                <p class="name">Figma</p>
+                                <p class="star">★★★★★</p>
+                            </div>
+                            <p class="detail">近年のメインで使用しているツール。コンポーネントなども使用している。</p>
+                        </li>
+
+                        <li class="tool-item">
+                            <div class="title flex">
+                                <p class="name">Adobe XD</p>
+                                <p class="star">★★★☆☆</p>
+                            </div>
+                            <p class="detail">使用歴2年ほど。近年はFigmaの使用頻度の方が高いが、こちらも対応可能。</p>
+                        </li>
+
+                        <li class="tool-item">
+                            <div class="title flex">
+                                <p class="name">HTML</p>
+                                <p class="star">★★★★☆</p>
+                            </div>
+                            <p class="detail">基本的なコーディング可能。</p>
+                        </li>
+
+                        <li class="tool-item">
+                            <div class="title flex">
+                                <p class="name">CSS</p>
+                                <p class="star">★★★★☆</p>
+                            </div>
+                            <p class="detail">基本的なコーディング可能。SCSSなども対応可能。</p>
+                        </li>
+
+                        <li class="tool-item">
+                            <div class="title flex">
+                                <p class="name">JavaScript</p>
+                                <p class="star">★★★☆☆</p>
+                            </div>
+                            <p class="detail">基本的な知識あり。jQueryやその他ライブラリ、フレームワークなども使用。</p>
+                        </li>
+
+                        <li class="tool-item">
+                            <div class="title flex">
+                                <p class="name">WordPress</p>
+                                <p class="star">★★★☆☆</p>
+                            </div>
+                            <p class="detail">構築経験あり。管理や更新など対応可能。</p>
+                        </li>
+                    </ul>
+                    <ol class="policies flex">
+                        <li class="item">
+                            <p class="number">1</p>
+                            <p class="title">クライアントとユーザーの気持ちをつなぐデザイン。</p>
+                            <p class="detail">
+                                クライアントの思いや目的を、ユーザーに伝わる形へとつなぐことを大切にしています。目的やターゲット、事業やサービスへの理解を深め、それを色・レイアウト・文字などのビジュアルへ落とし込むことを意識しています。
+                            </p>
+                        </li>
+
+                        <li class="item">
+                            <p class="number">2</p>
+                            <p class="title">使いやすさの中に、ちょっとした楽しさを。</p>
+                            <p class="detail">
+                                見た目の美しさだけでなく、情報の整理や導線、操作性など、UI/UXの視点から「使いやすいデザイン」を考えています。そのうえで、デザインやインタラクションでの小さな遊び心など、使う人が「ちょっと楽しい」と感じられる工夫も大切にしています。
+                            </p>
+                        </li>
+
+                        <li class="item">
+                            <p class="number">3</p>
+                            <p class="title">よりよいクオリティ、より喜んでいただけるものを。</p>
+                            <p class="detail">
+                                プロとして当たり前のことではありますが、常に「今よりもクオリティの高い成果物を」「関わっていただく方々に、より喜んでもらえる仕事を」と考えています。情報やスキルのキャッチアップを続けることはもちろん、自分の感覚だけに頼らず、客観的な視点を持って制作することを意識しています。
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    
+        <section id="news" data-gradient-start="#E2E288" data-gradient-end="#9CDD49">
+            <div class="wrapper_toppage">
+                <h2 class="section-title">News</h2>
+                <ul class="news_list">
+                    <li>
+                        <a class="flex_space-between" href="news/news-260904-01.html">
+                            <div class="textarea">
+                                <time datetime="2026-09-04">2026.09.04</time>
+                                <p class="detail">ポートフォリオサイトをさらにリニューアル・公開しました！(2026年版)</p>
+                            </div>
+                            <img class="arrow" src="img/button/news_arrow.svg" alt="矢印">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex_space-between" href="news/news-250420-01.html">
+                            <div class="textarea">
+                                <time datetime="2025-04-20">2025.04.20</time>
+                                <p class="detail">【※25.10.4 閉鎖しました】WordPressのポートフォリオサイトを公開しました。</p>
+                            </div>
+                            <img class="arrow" src="img/button/news_arrow.svg" alt="矢印">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex_space-between" href="news/news-250414-01.html">
+                            <div class="textarea">
+                                <time datetime="2025-04-14">2025.04.14</time>
+                                <p class="detail">ポートフォリオサイトをリニューアル・公開しました。</p>
+                            </div>
+                            <img class="arrow" src="img/button/news_arrow.svg" alt="矢印">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <section id="contact" data-gradient-start="#88E2C0" data-gradient-end="#3CC9F0">
+            <div class="wrapper_toppage">
+                <h2 class="section-title">Contact</h2>
+                <p class="comment">
+                    ご覧いただきありがとうございます。<br>
+                    お問い合わせはこちらまで。お気軽にご連絡ください。
+                </p>
+                <!-- Formrun(フォーム)埋め込み -->
+                <script src="https://sdk.form.run/js/v2/embed.js"></script>
+                <div class="formrun-embed" data-formrun-form="@awAkHjZQJDPVkspTlqIY" data-formrun-redirect="true">
+                </div>
+                <!-- Formrun(フォーム)埋め込みここまで -->
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer">
+        <div class="wrapper_toppage">
+            <p class="copyright">© Copyright Kanna Yaguchi Portfolio Site All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
