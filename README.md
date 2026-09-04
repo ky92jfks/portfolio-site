@@ -1,6 +1,6 @@
 # Portfolio Site (HTML/CSS/JS)
 
-このリポジトリは、自身のポートフォリオとして制作した静的サイトのデータです。
+このリポジトリは、自身のポートフォリオとして制作したWebサイトのデータです。
 
 ## 概要
 - 使用技術：HTML / CSS / JavaScript(jQuery)
